@@ -1,0 +1,156 @@
+body{
+  background-color: white;
+}
+
+.cropper-crop-box, .cropper-view-box {
+  height: 200px;
+  width: 170px;
+}
+
+.cropper-view-box {
+  box-shadow: 0 0 0 1px #39f;
+  outline: 0;
+}
+
+.cropper-face {
+  background-color:green !important;
+  height: 200px;
+  width: 170px;
+}
+
+.cropper-dashed, .cropper-point.point-se, .cropper-point.point-sw, .cropper-point.point-nw,   .cropper-point.point-ne, .cropper-line {
+ display: none;
+}
+
+.cropper-view-box {
+  outline:inherit !important;
+}
+
+.img-container{
+  height: 350px;
+  overflow: hidden;
+}
+
+.slidecontainer{
+  width: 100%;
+}
+
+.slider{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover{
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.label{
+  cursor: pointer;
+}
+
+.progress{
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.alert{
+  display: none;
+}
+
+.img-container img{
+  max-width: 100%;
+}
+
+.cropper-view-box,
+.cropper-face{
+  border-radius: 50%;
+}
+
+#my_camera{
+  margin-left: 35px;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.content-block{
+  padding: 50px;
+}
+
+/* Modal Styling */
+
+.modal-content{
+    border: none;
+    outline: none;
+    border-radius: 0px;
+}
+
+.modal-header{
+    background: #f06603;
+    color: white;
+    font-weight: bold;
+    border-radius: 0px;
+}
+
+.modal-footer{
+    display: block;
+}
+
+.close{
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover{
+    color: white;
+}
+
+.cropper-bg{
+    background: transparent !important;
+}
+
+.cropper-face{
+    background-color: transparent !important;
+}
+
+input[type=range]::-moz-range-thumb{
+    background-color: #f06603;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    background-color: #f06603;
+}
+
+input[type=range]::-ms-thumb{
+    background-color: #f06603;
+}
+
+.alert-success {
+    color: white;
+    background-color: #f06603;
+}
